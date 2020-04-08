@@ -1,0 +1,6 @@
+FROM node
+RUN npm install -g @ionic/cli
+COPY . . 
+WORKDIR /front_ydays
+RUN npm i 
+CMD ["ionic","serve","--address", "0.0.0.0","--no-open", "--disableHostCheck"]

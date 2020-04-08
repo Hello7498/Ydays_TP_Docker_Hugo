@@ -1,0 +1,17 @@
+{
+  "name": "api_projet_ydays",
+  "version": "1.0.0",
+  "description": "API du projet Ydays, Alexandre t'es beau",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "save": "^2.4.0",
+    "sqlite3": "^4.0.9"
+  }
+}

@@ -1,0 +1,47 @@
+version: "3"
+services : 
+    ydays_nginx : 
+        image : ydays_nginx 
+        depends_on :
+            - ydays_front_end
+            - ydays_front_end_2
+            - ydays_back_end
+            - ydays_monitoring
+        build : ./nginx
+        ports : 
+            - "80:80"
+        networks : 
+            - ydays-network 
+    ydays_front_end : 
+        build : ./Front-end
+        image : test_ydays_ionic 
+        ports : 
+            - "4200:8100"
+        networks : 
+            - ydays-network 
+    ydays_front_end_2 : 
+        build : ./Front-end
+        image : test_ydays_ionic
+        ports: 
+            - "4201:8100"
+        networks: 
+            - ydays-network 
+    ydays_back_end : 
+        build : ./Back-end
+        image: ydays_back_end 
+        ports: 
+            - "3002:3002"
+        networks: 
+            - ydays-network 
+    ydays_monitoring : 
+        image : salihciftci/liman 
+        ports : 
+            - "5000:5000"
+        volumes: 
+            - /var/run/docker.sock:/var/run/docker.sock
+            - liman:/liman/data 
+networks : 
+    ydays-network : 
+        
+volumes: 
+    liman:

@@ -1,0 +1,57 @@
+<!--
+  Generated template for the B2uAuthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<ion-header>
+</ion-header>
+
+
+
+
+
+<ion-content padding class="bg">
+  <div class="row" style="height: 100%;">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card" id="cardLogin">
+        <div class="card-body">
+          <div class="titleCard text-center mb-3"> Login</div>
+          <div id="ErrorPassword" [innerHTML]="wrongPassword"></div>
+          <form>
+            <div class="form-group">
+              <i class="fa fa-user itemLeft"></i>
+              <input [(ngModel)]="userName" name="userName" [ngStyle]="{'background-color' : colorForm}" type="text"
+                class="form-control" placeholder="Username" required="required">
+            </div>
+            <div class="form-group mt-4">
+              <i class="fa fa-lock itemLeft"></i>
+              <input [type]="isActive ? 'password' : 'text'" [(ngModel)]="password" name="password" id="formPassword" [ngStyle]="{'background-color' : colorForm}"
+                class="form-control" placeholder="Password" required="required"> 
+                <i [className]="eyes" (click)="showPassword()" ></i>
+            </div>
+            <button (click)="login()" class="btn-blue p-2 mt-2 mb-1">LOGIN</button>
+          </form>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <!-- <div class="col-9"> -->
+            <div id="Dfp" class="col-9">
+              <a id="FP" (click)="forgotPassword()">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</ion-content>

@@ -1,0 +1,122 @@
+.instance-name{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  height: 40px;
+}
+#Dfp {
+  align-self: center;
+}
+ion-content{
+
+  --ion-background-color:#222;
+}
+h2{
+    color: black;
+    font-size: 0.85em;
+ 
+}
+
+h3{
+    color: black;
+    font-size: 1.25em;
+}
+.itemLeft {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  font-size: 18px;
+}
+.itemRight {
+  position: absolute;
+  right : 13px;
+  top: 13px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.form-control {
+  padding-left: 40px;
+  font-size: 1em;
+}
+.form-control:focus {
+  border-color: #0070AD;
+}
+.form-group {
+  position: relative;
+}
+
+ion-navbar{
+  vertical-align: middle;
+}
+
+
+ion-title{
+  width: 20%;
+  display: inline-block;
+  margin-top : 20px;
+}
+img{
+  float: right;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  height: 45px;
+  margin : 10px;
+}
+.version {
+  margin-top: 25px;
+   float: right;
+   margin-right: 10px;
+ }
+ ion-content {
+   font-size: 1.2em;
+ } 
+ .btn-blue {
+ 
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color : #0070AD;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+ 
+}
+.btn-blue:hover{
+  background-color: #008CD8;
+  display: inline-block;
+}
+.card-footer {
+  background: #ecf0f1;
+  border-color: #dee4e7;
+  justify-content: center;
+}
+#cardLogin{
+  margin-top : 25% ;
+}
+.titleCard {
+  font-size: 1.5em;
+}
+.bg {
+  background-color: darken($color: #000000, $amount: 0);
+}
+#logoF {
+  max-width: 25px;
+  height: auto;
+}
+#FP{
+  align-self: center;
+  color: #0070AD;
+  cursor: pointer;
+}
+#formPassword {
+  padding-right: 40px;
+}
+#ErrorPassword {
+  color: red;
+  text-align: center;
+}
